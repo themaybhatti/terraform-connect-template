@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - sudo yum update -y
+      - sudo yum install -y yum-utils
+      - sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+      - sudo yum -y install terraform
+  pre_build:
+    commands:
+      - terraform --version
+      - cd ./connect_setup
+      - chmod -R 755 ./backend-tfvars/s3_buckets/
+      - ./backend-tfvars/s3_buckets/dev_s3.sh
+      - terraform init --backend-config ./backend-tfvars/dev.hcl -reconfigure
+      - terraform validate
+  build:
+    commands:
+      - terraform plan --var-file ./tfvars/dev.tfvars

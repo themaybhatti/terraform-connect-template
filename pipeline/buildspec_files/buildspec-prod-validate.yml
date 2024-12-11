@@ -1,0 +1,28 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - sudo yum update -y
+      - sudo yum install -y yum-utils
+      - sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+      - sudo yum -y install terraform
+  pre_build:
+    commands:
+      - terraform --version
+      - aws --version
+      - |
+            ASSUME_ROLE_ARN=$PROD_ASSUME_IAM_ROLE
+            TEMP_ROLE=$(aws sts assume-role --role-arn $ASSUME_ROLE_ARN --role-session-name AWSCLI-Session)
+            export TEMP_ROLE
+            export AWS_ACCESS_KEY_ID=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.AccessKeyId')
+            export AWS_SECRET_ACCESS_KEY=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.SecretAccessKey')
+            export AWS_SESSION_TOKEN=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.SessionToken')
+      - aws sts get-caller-identity
+      - cd ./connect_setup
+      - chmod -R 755 ./backend-tfvars/s3_buckets/
+      - ./backend-tfvars/s3_buckets/prod_s3.sh
+      - terraform init --backend-config ./backend-tfvars/prod.hcl -reconfigure
+      - terraform validate
+  build:
+    commands:
+      - terraform plan --var-file ./tfvars/prod.tfvars
