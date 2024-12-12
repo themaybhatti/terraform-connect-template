@@ -1,0 +1,511 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "9d376dfe-11ff-432a-8076-d88473de3bcb",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 20,
+      "y": 20
+    },
+    "ActionMetadata": {
+      "9d376dfe-11ff-432a-8076-d88473de3bcb": {
+        "position": {
+          "x": 90.4,
+          "y": 170.4
+        },
+        "overrideConsoleVoice": false
+      },
+      "1b19f6a0-00e5-4306-a8b6-0ce6c3008603": {
+        "position": {
+          "x": 325.6,
+          "y": 32
+        },
+        "parameters": {
+          "PromptId": {
+            "displayName": "Beep.wav"
+          }
+        },
+        "promptName": "Beep.wav"
+      },
+      "f6bdd0e1-638d-461d-9ca2-523846090767": {
+        "position": {
+          "x": 388.8,
+          "y": 230.4
+        },
+        "dynamicParams": []
+      },
+      "ffcd5ffb-8bfe-4c6f-89ed-887a73f7f4ae": {
+        "position": {
+          "x": 630.4,
+          "y": 44.8
+        },
+        "conditionMetadata": [
+          {
+            "id": "8be1a6b4-de57-46a3-9336-293f92831998",
+            "value": "1"
+          },
+          {
+            "id": "51e5eaf7-d7a7-4ace-a496-02013aa04457",
+            "value": "2"
+          }
+        ]
+      },
+      "b4ac288e-af07-4a66-9403-7999cb73262b": {
+        "position": {
+          "x": 976.8,
+          "y": 48
+        },
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "46903269-b157-4e98-8fde-cfceb7dad5fa": {
+        "position": {
+          "x": 1064,
+          "y": 277.6
+        },
+        "dynamicParams": []
+      },
+      "0f187c5d-21df-48c0-a652-54812ae598a7": {
+        "position": {
+          "x": 1289.6,
+          "y": 46.4
+        },
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "023a4f4e-9945-4cbd-832b-3b291db298a9": {
+        "position": {
+          "x": 1342.4,
+          "y": 274.4
+        },
+        "dynamicParams": []
+      },
+      "bf5efe5b-6321-4ad2-bfa0-22ef039979d9": {
+        "position": {
+          "x": 936,
+          "y": 638.4
+        }
+      },
+      "00870b41-42ad-4820-a688-f7c924944bf6": {
+        "position": {
+          "x": 705.6,
+          "y": 424.8
+        }
+      },
+      "5a6acf34-d11f-4236-b9ff-5615772c5358": {
+        "position": {
+          "x": 2546.4,
+          "y": 140
+        }
+      },
+      "65759dce-9895-411a-b87b-b0a8517272f0": {
+        "position": {
+          "x": 2677.6,
+          "y": 689.6
+        }
+      },
+      "0c34f538-e8ce-4dc1-a2b3-ac96754c68b8": {
+        "position": {
+          "x": 1569.6,
+          "y": 44.8
+        },
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "12f44c76-f17d-4a97-b04a-3425789272a3": {
+        "position": {
+          "x": 1629.6,
+          "y": 272
+        },
+        "dynamicParams": []
+      },
+      "fb389cbc-1e30-43fc-9bae-c62b5745dd25": {
+        "position": {
+          "x": 2276,
+          "y": 265.6
+        },
+        "dynamicParams": []
+      },
+      "595c64a6-3871-4794-9c72-8366c72e7755": {
+        "position": {
+          "x": 1963.2,
+          "y": 265.6
+        },
+        "dynamicParams": []
+      },
+      "99e3c7c5-651f-4f4d-a17f-e3ecda53d3a7": {
+        "position": {
+          "x": 1873.6,
+          "y": 44
+        },
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "733f2e40-715e-4fd3-b370-57738aa63bbe": {
+        "position": {
+          "x": 2197.6,
+          "y": 44.8
+        },
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      }
+    },
+    "Annotations": [],
+    "name": "LASAN Survey Flow - Spanish",
+    "description": "Survey for Spanish",
+    "type": "queueTransfer",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Mia"
+      },
+      "Identifier": "9d376dfe-11ff-432a-8076-d88473de3bcb",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "1b19f6a0-00e5-4306-a8b6-0ce6c3008603"
+      }
+    },
+    {
+      "Parameters": {
+        "PromptId": "arn:aws:connect:us-east-1:648867426675:instance/48f754fd-e1d5-49a5-82fd-65a47fb3e634/prompt/37711d92-1300-4159-b577-91386742383e"
+      },
+      "Identifier": "1b19f6a0-00e5-4306-a8b6-0ce6c3008603",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "f6bdd0e1-638d-461d-9ca2-523846090767"
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "surveyAnswer1": "0",
+          "surveyAnswer2": "0",
+          "surveyAnswer3": "0",
+          "surveyAnswer4": "0",
+          "surveyAnswer5": "0"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "f6bdd0e1-638d-461d-9ca2-523846090767",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "ffcd5ffb-8bfe-4c6f-89ed-887a73f7f4ae",
+        "Errors": [
+          {
+            "NextAction": "00870b41-42ad-4820-a688-f7c924944bf6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "La ciudad de el ey  valora su opinion. ¿Te gustaría completar una breve encuesta de 5 preguntas? Presione 1 para Sí, o presione 2 para No.",
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5"
+      },
+      "Identifier": "ffcd5ffb-8bfe-4c6f-89ed-887a73f7f4ae",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "b4ac288e-af07-4a66-9403-7999cb73262b",
+        "Conditions": [
+          {
+            "NextAction": "b4ac288e-af07-4a66-9403-7999cb73262b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "bf5efe5b-6321-4ad2-bfa0-22ef039979d9",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "b4ac288e-af07-4a66-9403-7999cb73262b",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "b4ac288e-af07-4a66-9403-7999cb73262b",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "00870b41-42ad-4820-a688-f7c924944bf6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Qué tan bien entendió el agente del centro de llamadas su problema en una escala de 1 a 5, siendo 5 Excelente?",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "1"
+          }
+        }
+      },
+      "Identifier": "b4ac288e-af07-4a66-9403-7999cb73262b",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "46903269-b157-4e98-8fde-cfceb7dad5fa",
+        "Errors": [
+          {
+            "NextAction": "0f187c5d-21df-48c0-a652-54812ae598a7",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "surveyAnswer1": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "46903269-b157-4e98-8fde-cfceb7dad5fa",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "0f187c5d-21df-48c0-a652-54812ae598a7",
+        "Errors": [
+          {
+            "NextAction": "0f187c5d-21df-48c0-a652-54812ae598a7",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Qué tan cortés y educado fue el Agente del centro de llamadas en una escala de 1 a 5, siendo 5 Excelente?",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "1"
+          }
+        }
+      },
+      "Identifier": "0f187c5d-21df-48c0-a652-54812ae598a7",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "023a4f4e-9945-4cbd-832b-3b291db298a9",
+        "Errors": [
+          {
+            "NextAction": "0c34f538-e8ce-4dc1-a2b3-ac96754c68b8",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "surveyAnswer2": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "023a4f4e-9945-4cbd-832b-3b291db298a9",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "0c34f538-e8ce-4dc1-a2b3-ac96754c68b8",
+        "Errors": [
+          {
+            "NextAction": "0c34f538-e8ce-4dc1-a2b3-ac96754c68b8",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Gracias por llamar a la Ciudad de el ey. Adiós."
+      },
+      "Identifier": "bf5efe5b-6321-4ad2-bfa0-22ef039979d9",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "65759dce-9895-411a-b87b-b0a8517272f0"
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "No podemos procesar encuestas en este momento. Gracias por su comprensión."
+      },
+      "Identifier": "00870b41-42ad-4820-a688-f7c924944bf6",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "65759dce-9895-411a-b87b-b0a8517272f0"
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Gracias por tomarse el tiempo para completar nuestra encuesta. Sus respuestas ayudarán a mejorar la calidad de nuestra llamada. Tenga un buen día. Adiós"
+      },
+      "Identifier": "5a6acf34-d11f-4236-b9ff-5615772c5358",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "65759dce-9895-411a-b87b-b0a8517272f0"
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "65759dce-9895-411a-b87b-b0a8517272f0",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Por favor, califique la velocidad en la que su llamada fue manejada en una escala de 1 a 5, siendo 5 Excelente",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "1"
+          }
+        }
+      },
+      "Identifier": "0c34f538-e8ce-4dc1-a2b3-ac96754c68b8",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "12f44c76-f17d-4a97-b04a-3425789272a3",
+        "Errors": [
+          {
+            "NextAction": "99e3c7c5-651f-4f4d-a17f-e3ecda53d3a7",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "surveyAnswer3": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "12f44c76-f17d-4a97-b04a-3425789272a3",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "99e3c7c5-651f-4f4d-a17f-e3ecda53d3a7",
+        "Errors": [
+          {
+            "NextAction": "99e3c7c5-651f-4f4d-a17f-e3ecda53d3a7",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "surveyAnswer5": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "fb389cbc-1e30-43fc-9bae-c62b5745dd25",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "5a6acf34-d11f-4236-b9ff-5615772c5358",
+        "Errors": [
+          {
+            "NextAction": "5a6acf34-d11f-4236-b9ff-5615772c5358",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "surveyAnswer4": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "595c64a6-3871-4794-9c72-8366c72e7755",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "733f2e40-715e-4fd3-b370-57738aa63bbe",
+        "Errors": [
+          {
+            "NextAction": "733f2e40-715e-4fd3-b370-57738aa63bbe",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Qué tan bien se resolvió su problema durante la llamada en una escala de 1 a 5, siendo 5 Excelente?",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "1"
+          }
+        }
+      },
+      "Identifier": "99e3c7c5-651f-4f4d-a17f-e3ecda53d3a7",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "595c64a6-3871-4794-9c72-8366c72e7755",
+        "Errors": [
+          {
+            "NextAction": "733f2e40-715e-4fd3-b370-57738aa63bbe",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Text": "En general, cómo calificaría su experiencia en una escala de 1 a 5, siendo 5 Excelente?",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "1"
+          }
+        }
+      },
+      "Identifier": "733f2e40-715e-4fd3-b370-57738aa63bbe",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "fb389cbc-1e30-43fc-9bae-c62b5745dd25",
+        "Errors": [
+          {
+            "NextAction": "5a6acf34-d11f-4236-b9ff-5615772c5358",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

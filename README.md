@@ -185,3 +185,9 @@ We are deploying connect resources via AWS Developer Tools. For this, we are rel
 - **Quick Connects** --> _Creates a list of destinations for common transfers._
 - **Agent Status** --> _Creates a agent status but using the AWS CLI._
 - **AWS resources** --> _Creation of the AWS resources such as Lambda function/DynamoDB which are associated with connect instance_
+
+### Not avaialable in terraform:
+
+- Agent Status
+- Call Evaluation
+- Prompts
